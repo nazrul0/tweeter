@@ -1,5 +1,7 @@
 import '@styles/globals.css';
-// import { Children } from 'react/cjs/react.production.min';
+
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 export const metadata = {
     title: 'Tweeter',
@@ -15,6 +17,7 @@ const RootLayout = ({ children }) => {
             </div>
 
             <main className='app'>
+                <Nav/>
                 {children}
             </main>
         </body>
